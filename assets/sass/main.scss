@@ -1,0 +1,22 @@
+// color palette from https://colorhunt.co/palette/f8ededff8225b43f3f173b45
+$bg-color:#F8EDED;
+$primary:#FF8225;
+$secondary:#B43F3F;
+$info:#173B45;
+// $success:;
+// $warning:;
+// $danger:;
+// $light:;
+// $dark:;
+
+$min-contrast-ratio:   2.4 !default; //opcional si queremos que colores mas claros los considere "oscuros"
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// no funciona
+// $tertiary:#173B45;
+// $theme-colors: (
+//   "tertiary": $tertiary
+// );
+
+@import "./custom/custom.scss";
