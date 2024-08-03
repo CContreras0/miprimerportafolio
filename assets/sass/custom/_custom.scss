@@ -1,40 +1,81 @@
-*{
+* {
     background-color: $bg-color;
 }
-.navbar{
+
+.navbar {
     padding-left: 10vw;
     background-color: $bg-color !important;
 }
-.big-img{
+
+.big-img {
     width: 35vw;
     height: 35vw;
 }
-.first-btn{
-    background-color: #1d3557;
-    color: white;
+
+.first-btn {
+    background-color: $info;
+    color: $bg-color;
     width: 150px;
     height: 35px;
     border-radius: 7px;
 }
-.texticon{
-    display: flex;
-    align-items: center;
-    gap: 0.5vw;
 
-}
-.icon {
-    width: 3vw; 
-    height: 3vw;
+.texticon {
+    display: flex;
+    gap: 0.5vw;
     align-items: center;
 }
-H3{
+
+.texticon>p {
+    margin-bottom: 0px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+}
+
+H3 {
     margin-bottom: 3vw;
     margin-top: 3vw;
     text-align: center;
 }
-.coffee{
+
+.coffee {
     display: flex;
     align-items: center;
     gap: 10px;
     width: 280px;
 }
+
+@include media-breakpoint-down(sm) {}
+
+@include media-breakpoint-down(md) {
+    .big-img {
+        width: 100%;
+    }
+
+    .first-btn {
+        width: 100%;
+    }
+
+    .flex-custom-col {
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+// @include media-breakpoint-up(md) { 
+//     .texticon{
+//         align-items: center;
+//     }
+// }
+// @include media-breakpoint-down(lg) {  }
+// @include media-breakpoint-down(xl) {  }
+// @include media-breakpoint-down(xxl) {  }

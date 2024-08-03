@@ -11859,8 +11859,8 @@ textarea.form-control-lg {
 }
 
 .first-btn {
-  background-color: #1d3557;
-  color: white;
+  background-color: #173B45;
+  color: #F8EDED;
   width: 150px;
   height: 35px;
   border-radius: 7px;
@@ -11868,13 +11868,17 @@ textarea.form-control-lg {
 
 .texticon {
   display: flex;
-  align-items: center;
   gap: 0.5vw;
+  align-items: center;
+}
+
+.texticon > p {
+  margin-bottom: 0px;
 }
 
 .icon {
-  width: 3vw;
-  height: 3vw;
+  width: 50px;
+  height: 50px;
   align-items: center;
 }
 
@@ -11889,4 +11893,21 @@ H3 {
   align-items: center;
   gap: 10px;
   width: 280px;
+}
+
+@media (max-width: 767.98px) {
+  .big-img {
+    width: 100%;
+  }
+  .first-btn {
+    width: 100%;
+  }
+  .flex-custom-col {
+    flex-direction: column;
+    width: fit-content;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
